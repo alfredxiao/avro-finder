@@ -1,0 +1,43 @@
+plugins {
+	id 'java'
+}
+
+apply plugin: 'java'
+
+group = 'xiaoyf.tools'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	gradlePluginPortal()
+	maven { url "https://packages.confluent.io/maven/" }
+}
+
+dependencies {
+	implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.4.0'
+	implementation group: 'org.apache.avro', name: 'avro', version: '1.11.1'
+	implementation group: 'io.confluent', name: 'kafka-avro-serializer', version: '7.4.0'
+	implementation group: 'io.confluent', name: 'kafka-schema-serializer', version: '7.4.0'
+	implementation 'org.apache.commons:commons-lang3:3.12.0'
+	implementation 'commons-cli:commons-cli:1.5.0'
+
+	compileOnly 'org.projectlombok:lombok:1.18.28'
+	annotationProcessor 'org.projectlombok:lombok:1.18.28'
+	testImplementation 'org.projectlombok:lombok:1.18.28'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+jar {
+	manifest {
+		attributes(
+				"Main-Class": 'xiaoyf.demo.schemaregistry.consumer.LogicalGenericConsumerTool'
+		)
+	}
+}
+
