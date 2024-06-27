@@ -1,4 +1,4 @@
-package xiaoyf.tools.avrofinder;
+package xiaoyf.tools.kfind;
 
 public class ConsoleHelper {
 

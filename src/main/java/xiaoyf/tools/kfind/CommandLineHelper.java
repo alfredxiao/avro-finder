@@ -1,4 +1,4 @@
-package xiaoyf.tools.avrofinder;
+package xiaoyf.tools.kfind;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;

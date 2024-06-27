@@ -1,4 +1,4 @@
-package xiaoyf.tools.avrofinder;
+package xiaoyf.tools.kfind;
 
 import lombok.Getter;
 import org.apache.kafka.clients.consumer.Consumer;

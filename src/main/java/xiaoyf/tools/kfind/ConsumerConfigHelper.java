@@ -1,4 +1,4 @@
-package xiaoyf.tools.avrofinder;
+package xiaoyf.tools.kfind;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
