@@ -46,7 +46,11 @@ Notes:
 2. if not specified in command line, can set `schema.registry.url` in consumer config file.
    if not available still, defaults to localhost:8081
 
-# Examples
-`-c config/client.props -t TOPIC_NAME -k io.confluent.kafka.serializers.KafkaAvroDeserializer -v io.confluent.kafka.serializers.KafkaAvroDeserializer -e -gl 10 -g STRING_TO_GREP`
+# Build
+(with JDK17)
+`./gradlew shadowJar`
+
+# Run
+`java -jar build/libs/kfind-0.0.1-SNAPSHOT-all.jar -c config/client.props -t TOPIC_NAME -k io.confluent.kafka.serializers.KafkaAvroDeserializer -v io.confluent.kafka.serializers.KafkaAvroDeserializer -e -gl 10 -g STRING_TO_GREP`
 
 
