@@ -1,8 +1,8 @@
 # Introduction
 
-`kfind` is a kafka consumer that outputs records from a topic, it is similar to `kafka-avro-console-consumer`, or `kafkactl consume`, but it has special support of some features useful for developers in real world scenarios. E.g. print logical types like Decimals. Some of these features are not available in those alternative tools.
+`kfind` is a tool (essentially a kafka consumer) that outputs records from a topic, it is similar to `kafka-avro-console-consumer`, or `kafkactl consume`, but it has special support of some features useful for developers in real world scenarios. E.g. print logical types like Decimals. Some of these features are not available in those alternative tools.
 
-# Feature
+# Features
 - **Logical Types support**
   - Supports logical types like decimals, timestamps.
   - No need for extra parameter passed to command line
